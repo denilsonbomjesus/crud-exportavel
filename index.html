@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRUD com Exportação/Importação CSV</title>
+  <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+  <h1>CRUD Local - Modelo Exportável</h1>
+
+  <form id="crudForm">
+    <input type="text" id="nome" placeholder="Nome" required>
+    <input type="number" id="idade" placeholder="Idade" required>
+    <button type="submit">Adicionar</button>
+  </form>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Idade</th>
+        <th>Ações</th>
+      </tr>
+    </thead>
+    <tbody id="tabelaDados"></tbody>
+  </table>
+
+  <div class="buttons">
+    <button id="exportarBtn">Salvar Modelo (CSV)</button>
+    <input type="file" id="importarInput" accept=".csv" hidden>
+    <button id="importarBtn">Importar Modelo</button>
+  </div>
+
+  <script src="/assets/script.js"></script>
+</body>
+</html>
