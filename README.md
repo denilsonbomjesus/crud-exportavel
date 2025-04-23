@@ -2,4 +2,4 @@
 
 Exporta e Importa CSV.
 
-- [ X ] Menu Sidebar.
+- [x] Menu Sidebar.
